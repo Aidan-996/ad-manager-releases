@@ -1,0 +1,10 @@
+*.exe
+*.dmg
+*.zip
+*.key
+*.pem
+*.pfx
+*.lic
+dist/
+node_modules/
+.DS_Store
