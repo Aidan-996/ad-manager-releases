@@ -15,7 +15,7 @@ ad-manager-*-windows-amd64/
   data/           # 首次运行后自动创建（配置、数据库、自签名证书）
 ```
 
-> **推荐下载 `*-setup.exe` 安装包**：一键安装到 `%LOCALAPPDATA%\ADManager`，创建桌面/开始菜单快捷方式，并自动启动（会打开浏览器）。  
+> **推荐下载 `*-setup.exe` 安装包**：一键安装到 `%LOCALAPPDATA%\ADManager`，创建开始菜单快捷方式（安装向导组件页可勾选桌面快捷方式），并自动启动（会打开浏览器）。  
 > 也可下载 `.zip` 解压后运行。Release 中单独的裸 `.exe`（非 setup）不含 `web/`，双击会因缺少前端而退出（现已弹窗提示）。
 
 ## 如何安装（推荐）
@@ -101,14 +101,11 @@ Linux 安装仍请使用 Release 中的 `install.sh` 包（本 zip 仅面向 Win
 1. 以本地超级管理员登录，打开「系统设置 → 授权与版本」。
 2. 在「软件更新」区域点「检查更新」：后端查询公开仓库 [Aidan-996/ad-manager-releases Releases](https://github.com/Aidan-996/ad-manager-releases/releases)（**基础版与专业版相同**）。**无需** `ADMANAGER_GH_TOKEN`；需能访问 GitHub（企业可设代理，或用 `ADMANAGER_UPDATE_REPO` 覆盖）。
 3. 若有新版本，优先选择带「推荐」标记的包：基础版为 `ad-manager-*-setup.exe`，专业版为 `ad-manager-pro-*-setup.exe`（其次 zip / dmg），点「下载到本机」。文件保存到 `data/updates/`；有 GitHub `digest` 或同名 `.sha256` 时自动校验。
-4. **应用 / 重启为手工步骤（当前版本）**：
-   - 退出正在运行的 `admanager.exe`（任务管理器结束进程，或结束对应后台任务）。
-   - **推荐**：再运行刚下载的 `*-setup.exe`，安装到**同一目录**（默认 `%LOCALAPPDATA%\ADManager`）；安装程序只覆盖程序文件与 `web/`，**不会删除 `data/`**。
-   - **或**：将 zip 解压后覆盖安装目录中的 `admanager.exe` 与 `web/`（**务必保留原 `data/`**）。
-   - 重新双击启动。
-5. 仅当自行把更新源改到**私有**仓库时，才需要在进程环境设置 `ADMANAGER_GH_TOKEN`。也可用 `ADMANAGER_UPDATE_REPO=owner/name` 覆盖。令牌仅服务端使用，不会出现在界面或 API 响应中。详见 [RELEASES.md](./RELEASES.md)。
+4. **推荐**：下载完成后点「一键应用并重启」——自动替换安装目录中的 `admanager.exe` 与 `web/`，**保留 `data/`**，并重启进程。`*-setup.exe` 会静默覆盖安装到当前目录；zip / 裸 exe 由应用内直接替换。
+5. **亦可手工**：退出进程后运行 `*-setup.exe` 覆盖到同一目录，或解压 zip 覆盖 `admanager.exe` 与 `web/`（务必保留 `data/`），再启动。
+6. 仅当自行把更新源改到**私有**仓库时，才需要在进程环境设置 `ADMANAGER_GH_TOKEN`。也可用 `ADMANAGER_UPDATE_REPO=owner/name` 覆盖。令牌仅服务端使用，不会出现在界面或 API 响应中。详见 [RELEASES.md](./RELEASES.md)。
 
-> 应用内不会替换正在运行的二进制，也不会自动重启服务。
+> 一键应用会替换正在运行的程序文件并重启；`data/`（配置、数据库、授权、证书）始终保留。
 
 ## 离线升级（无外网）
 

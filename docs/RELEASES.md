@@ -1,13 +1,13 @@
 # 发版与在线更新（公开 Releases）
 
-本仓库是**唯一对外**的教程 + 安装包托管处；**不含源码**。当前对外版本：**v23.2.6**。
+本仓库是**唯一对外**的教程 + 安装包托管处；**不含源码**。当前对外版本：**v23.2.7**。
 
 ## 原则
 
 - **所有客户面向的检查更新 / 下载**默认走本仓库  
   [`Aidan-996/ad-manager-releases`](https://github.com/Aidan-996/ad-manager-releases/releases)  
   **不需要** `ADMANAGER_GH_TOKEN`。
-- 基础版与专业版**共用同一 tag**（如 `v23.2.6`）的 Release；用资源名区分：
+- 基础版与专业版**共用同一 tag**（如 `v23.2.7`）的 Release；用资源名区分：
   - 基础版：`ad-manager-<ver>-windows-amd64-setup.exe` / `.zip` / `darwin-*.dmg` …
   - 专业版：`ad-manager-pro-<ver>-windows-amd64-setup.exe` / `.zip` / `darwin-*.dmg` …
 - 源码在私有仓 `ad-manager` / `ad-manager-pro`；**产物只上传到本公开 Release**。
