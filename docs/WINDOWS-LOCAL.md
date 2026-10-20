@@ -122,7 +122,7 @@ Linux 安装仍请使用 Release 中的 `install.sh` 包（本 zip 仅面向 Win
 
 ## Windows SmartScreen /「未知发布者」
 
-自 **v23.2.4** 起，发行包中的 `admanager.exe` 与 `*-setup.exe` 使用**自签名 Authenticode** 证书签名（Linux 上 `osslsigncode`；公钥见本仓 `scripts/codesign/admanager-codesign.crt`）。
+自 **v23.2.4** 起，发行包中的 `admanager.exe` 与 `*-setup.exe` 使用**自签名 Authenticode** 证书签名（Linux 上 `osslsigncode`；公钥见仓库 `scripts/codesign/admanager-codesign.crt`）。
 
 请诚实预期：
 
