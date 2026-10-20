@@ -128,3 +128,14 @@ Linux 安装仍请使用 Release 中的 `install.sh` 包（本 zip 仅面向 Win
 - **真正显著减少警告**需要购买 OV/EV 代码签名证书并对安装包签名，再随下载量积累声誉；本项目默认**不购买**商业证书。
 - **用户侧临时做法**：SmartScreen 对话框 → **更多信息** → **仍要运行**（仅在信任来源时使用，例如从本仓库 GitHub Releases 下载并核对 `.sha256`）。
 - 自建签名：设置 `ADMANAGER_CODESIGN_PFX` / `ADMANAGER_CODESIGN_PASS` 后运行 `scripts/build-windows.sh`；详见 `scripts/codesign/README.md`。
+
+## API 令牌（脚本）
+
+「系统设置 → API 令牌」可创建长效 Bearer。示例：
+
+```bash
+curl -sk -H "Authorization: Bearer adm_…" https://127.0.0.1:9443/api/auth/me
+```
+
+Bearer 请求无需 CSRF；令牌保存在 `data/`（覆盖安装保留）。
+
