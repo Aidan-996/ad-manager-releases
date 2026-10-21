@@ -1,10 +1,11 @@
 > **统一包 v23.2.10**：一份安装；`.lic` 解锁 Pro；覆盖保留 `data/`。旧专业版目录为 `ADManagerPro`，请迁移 `data/` 到 `ADManager` 后再装统一包。
 
-# Windows 本地版（双击运行）
+## 系统要求
 
-Copyright (c) 2026 AD Manager
+- 提供 **64 位（`windows-amd64`）** 与 **32 位（`windows-386`）** 安装包，请按系统位数下载。
+- 最低：**Windows Server 2012 R2** / **Windows 8.1** 或更新（推荐 Server 2012 R2 x64 或 Windows 10 / Server 2016+）。
+- 若提示「此应用无法在你的电脑上运行」：先确认下载了匹配的 amd64/386 包；仍失败请升级系统。
 
-本包将 AD 域系统管理平台以后端 exe + 前端静态文件的形式运行在本机，**无需 nginx / 无需 Linux 服务器**。
 
 ## 目录结构
 
