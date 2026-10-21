@@ -41,7 +41,7 @@ ad-manager-*-windows-amd64/
 
 若启动失败（缺 `web/`、端口占用、其它错误），会弹出错误对话框（无需黑 CMD 窗口）。
 
-自 **v23.2.13** 起（授权页锁定能力预览显示「需导入授权」；在线更新若 DNS 失败有中文提示，可配置镜像或上传离线包）：再次打开或覆盖安装后启动时，若 `127.0.0.1:9443` 仍被另一份 AD Manager（`admanager.exe`）占用，新进程会先结束旧实例再绑定。仅当端口被无关程序占用时提示关闭该程序或使用 `-listen`。
+自 **v23.2.14** 起（侧栏「软件更新」；授权页精简）。自 **v23.2.13** 起（授权页锁定能力预览显示「需导入授权」；在线更新若 DNS 失败有中文提示，可配置镜像或上传离线包）：再次打开或覆盖安装后启动时，若 `127.0.0.1:9443` 仍被另一份 AD Manager（`admanager.exe`）占用，新进程会先结束旧实例再绑定。仅当端口被无关程序占用时提示关闭该程序或使用 `-listen`。
 
 ## 覆盖安装与「用户名或密码错误」
 
@@ -103,8 +103,8 @@ Linux 安装仍请使用 Release 中的 `install.sh` 包（本 zip 仅面向 Win
 
 ## 软件更新（应用内检查 / 下载）
 
-1. 以本地超级管理员登录，打开「系统设置 → 授权与版本」。
-2. 在「软件更新」区域点「检查更新」：后端查询公开仓库 [Aidan-996/ad-manager-releases Releases](https://github.com/Aidan-996/ad-manager-releases/releases)（**基础版与专业版相同**）。**无需** `ADMANAGER_GH_TOKEN`；需能访问 GitHub（企业可设代理，或用 `ADMANAGER_UPDATE_REPO` 覆盖）。
+1. 以本地超级管理员登录，打开侧栏「系统设置 → 软件更新」。
+2. 点「检查更新」：后端查询公开仓库 [Aidan-996/ad-manager-releases Releases](https://github.com/Aidan-996/ad-manager-releases/releases)（**基础版与专业版相同**）。**无需** `ADMANAGER_GH_TOKEN`；需能访问 GitHub（企业可设代理，或用 `ADMANAGER_UPDATE_REPO` 覆盖）。
 3. 若有新版本，优先选择带「推荐」标记的包：基础版为 `ad-manager-*-setup.exe`，专业版为 `ad-manager-pro-*-setup.exe`（其次 zip / dmg），点「下载到本机」。文件保存到 `data/updates/`；有 GitHub `digest` 或同名 `.sha256` 时自动校验。
 4. **推荐**：下载完成后点「一键应用并重启」——自动替换安装目录中的 `admanager.exe` 与 `web/`，**保留 `data/`**，并重启进程。`*-setup.exe` 会静默覆盖安装到当前目录；zip / 裸 exe 由应用内直接替换。
 5. **亦可手工**：退出进程后运行 `*-setup.exe` 覆盖到同一目录，或解压 zip 覆盖 `admanager.exe` 与 `web/`（务必保留 `data/`），再启动。
