@@ -1,9 +1,9 @@
-> **v23.2.10**：单一安装包；导入授权解锁下文 Professional / Enterprise 能力。
+> **v23.2.11**：单一安装包；导入 `.lic` 解锁下文 Professional / Enterprise 能力。
 
 # 功能介绍（公开说明）
 
 本文与应用内「系统设置 → 授权与版本」功能清单对齐，供采购、部署与对外介绍使用。  
-**基础版**与**专业版**安装包均在本仓库 Releases 提供；源码不公开。**专业版增值**需 `ad-manager-pro-*` 包 + 有效授权。
+安装包在本仓库 Releases 提供（统一包 `ad-manager-*`；`ad-manager-pro-*` 为同内容过渡别名）。源码不公开。专业能力在导入有效 `.lic` 后可用。
 
 安装包与在线更新均来自公开仓库 Releases：  
 https://github.com/Aidan-996/ad-manager-releases/releases
@@ -29,7 +29,7 @@ https://github.com/Aidan-996/ad-manager-releases/releases
 
 ## 二、授权后解锁（Professional+，基础版二进制即可）
 
-导入有效 `.lic` 后菜单与接口可用；未授权时菜单隐藏、接口 404。
+导入有效 `.lic` 后对应菜单可用；未导入时仅标准能力。
 
 | 能力 | 说明 |
 |---|---|
@@ -44,7 +44,7 @@ https://github.com/Aidan-996/ad-manager-releases/releases
 
 ## 三、专业版可开启（需专业版安装包 + 授权）
 
-下列能力在基础版安装包中仅作展示；实际运行需下载 **`ad-manager-pro-*`** 包并导入授权。
+下列能力包含在统一安装包中，导入有效 `.lic` 后可用。
 
 | 能力 | 说明 |
 |---|---|
