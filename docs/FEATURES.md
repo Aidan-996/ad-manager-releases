@@ -1,4 +1,4 @@
-> **v23.2.11**：单一安装包；导入 `.lic` 解锁下文 Professional / Enterprise 能力。
+> **v23.2.12**：单一安装包；导入 `.lic` 解锁下文 Professional / Enterprise 能力。
 
 # 功能介绍（公开说明）
 
