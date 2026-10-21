@@ -119,6 +119,10 @@ Linux 安装仍请使用 Release 中的 `install.sh` 包（本 zip 仅面向 Win
 4. 重新启动。配置、数据库、证书与授权文件均在 `data/`，覆盖安装后仍可用。
 
 
+## 许可与换机
+
+若更换电脑、重装系统或迁移虚拟机后提示许可不可用：在「授权与版本」复制指纹与实例 ID，联系供应商重新签发 `.lic`，再导入即可。升级安装请保留 `data/`。
+
 ## Windows SmartScreen /「未知发布者」
 
 自 **v23.2.4** 起，发行包中的 `admanager.exe` 与 `*-setup.exe` 使用**自签名 Authenticode** 证书签名（Linux 上 `osslsigncode`；公钥见仓库 `scripts/codesign/admanager-codesign.crt`）。
