@@ -1,3 +1,5 @@
+> **统一包 v23.2.10**：一份安装；`.lic` 解锁 Pro；覆盖保留 `data/`。旧专业版目录为 `ADManagerPro`，请迁移 `data/` 到 `ADManager` 后再装统一包。
+
 # macOS 本地版（.app / DMG）
 
 本包将 AD 域系统管理平台以 macOS 应用形式运行在本机，**无需 nginx / 无需 Linux 服务器**。

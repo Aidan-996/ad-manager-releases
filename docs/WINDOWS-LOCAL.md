@@ -1,3 +1,5 @@
+> **统一包 v23.2.10**：一份安装；`.lic` 解锁 Pro；覆盖保留 `data/`。旧专业版目录为 `ADManagerPro`，请迁移 `data/` 到 `ADManager` 后再装统一包。
+
 # Windows 本地版（双击运行）
 
 Copyright (c) 2026 AD Manager

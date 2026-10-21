@@ -7,7 +7,7 @@
 
 **不含应用程序源码。** 源码仓库为私有：`Aidan-996/ad-manager`（基础版）、`Aidan-996/ad-manager-pro`（专业版）。
 
-应用内「检查更新」默认查询本仓库 Releases；典型用户**无需** GitHub Token。当前对外：**v23.2.9**。
+应用内「检查更新」默认查询本仓库 Releases；典型用户**无需** GitHub Token。当前对外：**v23.2.10**。
 
 | 文档 | 说明 |
 |---|---|
@@ -19,7 +19,7 @@
 
 ## 下载
 
-→ **[Releases](https://github.com/Aidan-996/ad-manager-releases/releases)**（当前 tag：**v23.2.9**）
+→ **[Releases](https://github.com/Aidan-996/ad-manager-releases/releases)**（当前 tag：**v23.2.10**）
 
 - 基础版：`ad-manager-*`（排除 `ad-manager-pro-*`）
 - 专业版：`ad-manager-pro-*`（需有效授权解锁增值功能）
@@ -33,6 +33,7 @@
 
 | 版本 | 要点 |
 |---|---|
+| v23.2.10 | **统一安装包**：单一 setup；.lic 解锁 Pro；保留多点 live 重验签 |
 | v23.2.9 | 多点授权闸门（live 重验签，防单点 bypass） |
 | v23.2.8 | API 令牌（Bearer）；脚本免 CSRF 调用 REST |
 | v23.2.7 | 仪表盘待处理卡片；NSIS 组件页/卸载删 data；一键应用更新 |
